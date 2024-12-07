@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Meta tags e links para estilos -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Lucas S. Rosa</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Menu de navegação fixo -->
+    <header>
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#tech-stack">Tecnologias</a></li>
+          <li><a href="#curriculo">Currículo</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Seção inicial com apresentação -->
+    <section id="home">
+      <div class="apresentacao">
+        <div class="profile-container">
+          <div class="profile-image">
+            <img src="./assets/image/profile-photo.jpeg" alt="Lucas S. Rosa" />
+          </div>
+          <div class="profile-info">
+            <h1>LUCAS DA SILVEIRA ROSA</h1>
+            <h2>Desenvolvedor Full Stack</h2>
+            <p>🏠 Pelotas, RS - Brasil</p>
+            <p>👨‍💻 Especializado em desenvolvimento Web e Mobile</p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/lsrdev/" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/lucopdev" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="mailto:lucopdev@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="hobbies-card">
+          <h3>Hobbies & Interesses</h3>
+          <div class="hobbies-grid">
+            <div class="hobby-item">
+              <i class="fas fa-gamepad"></i>
+              <span>Games</span>
+            </div>
+            <div class="hobby-item">
+              <i class="fas fa-music"></i>
+              <span>Música</span>
+            </div>
+            <div class="hobby-item">
+              <i class="fas fa-utensils"></i>
+              <span>Gastronomia</span>
+            </div>
+            <div class="hobby-item">
+              <i class="fas fa-tv"></i>
+              <span>TV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio de projetos com filtros -->
+    <section id="projetos">
+      <h2 class="section-title">Projetos</h2>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="Frontend">Frontend</button>
+        <button class="filter-btn" data-filter="FullStack">FullStack</button>
+        <button class="filter-btn" data-filter="Fundaments">Fundamentos</button>
+      </div>
+      <div class="projects-grid" id="projectsContainer">
+        <!-- cards via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Stack de tecnologias organizadas por categoria -->
+    <section id="tech-stack">
+      <h2 class="section-title">Tecnologias</h2>
+      <div class="tech-container">
+        <div class="tech-category">
+          <h3>Frontend</h3>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS3</span>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-vuejs"></i>
+              <span>Next.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3>Backend</h3>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <i class="fab fa-node"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-server"></i>
+              <span>Express</span>
+            </div>
+            <div class="tech-item">
+              <i class="fab fa-java"></i>
+              <span>Java</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-database"></i>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-database"></i>
+              <span>MySql</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3>Mobile</h3>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <i class="fas fa-mobile-alt"></i>
+              <span>Flutter</span>
+            </div>
+            <div class="tech-item">
+              <i class="fas fa-code"></i>
+              <span>Dart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Currículo com timeline de experiências -->
+    <section id="curriculo">
+      <h2 class="section-title">Currículo</h2>
+      <div class="cv-container">
+        <div class="cv-header">
+          <div class="cv-download">
+            <a href="https://drive.google.com/file/d/1tbCpw7aAEhu6hZ1HYVR5nT2HjLD1BC2B/view?usp=drive_link" download class="download-btn"> <i class="fas fa-download"></i> Download CV </a>
+          </div>
+        </div>
+
+        <div class="cv-content">
+          <div class="cv-section">
+            <h3>Objetivo Profissional</h3>
+            <p>Atuar como pessoa Desenvolvedora Frontend, Backend, Fullstack web e/ou Mobile.</p>
+          </div>
+
+          <div class="cv-section">
+            <h3>Educação</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">2024 - 2026</div>
+                <div class="timeline-content">
+                  <h4>Análise e Desenvolvimento de Sistemas</h4>
+                  <p class="timeline-institution">UNINTER</p>
+                  <p>
+                    Análise de requisitos; Modelagem de sistemas; Desenvolvimento de software; Implantação e Manutenção;
+                    Documentação; Suporte e Treinamento.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2022 - 2024</div>
+                <div class="timeline-content">
+                  <h4>Desenvolvimento Web Full Stack</h4>
+                  <p class="timeline-institution">Trybe</p>
+                  <p>
+                    1.500 horas em desenvolvimento web, incluindo front-end, back-end, ciência da computação e
+                    metodologias ágeis.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <h3>Experiência Profissional</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 set - Atual</div>
+                    <div class="timeline-content">
+                        <h4>Desenvolvedor Frontend - 8ksoft</h4>
+                        <ul class="experience-list">
+                            <li>Desenvolvimento de aplicações web com React e Next.js</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 jan - 2024 set</div>
+                    <div class="timeline-content">
+                        <h4>Desenvolvedor Freelancer</h4>
+                        <ul class="experience-list">
+                            <li>Software house Softtor – Desenvolvimento de Ecommerce e landing pages</li>
+                            <li>Quebrando as Bancas – Plataforma de Simulados para concursos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2022</div>
+                    <div class="timeline-content">
+                        <h4>Lucas' Pizza Artesanal - Proprietário</h4>
+                        <p>Gestão completa do negócio com crescimento de 15% nas vendas no último ano.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="cv-section skills-section">
+            <h3>Habilidades Técnicas</h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Frontend</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML5</span>
+                  <span class="skill-tag">CSS3</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">NextJS</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Backend</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">NodeJS</span>
+                  <span class="skill-tag">Express</span>
+                  <span class="skill-tag">Java</span>
+                  <span class="skill-tag">PostgreSQL</span>
+                  <span class="skill-tag">MySql</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de contato -->
+    <section id="contato">
+      <h2 class="section-title">Contato</h2>
+      <form id="contato-form">
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Rodapé com copyright -->
+    <footer>
+      <p>&copy; 2024 Lucas S. Rosa. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Botão para voltar ao topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script type="module" src="utils/projectsData.js"></script>
+    <script type="module" src="scripts.js"></script>
+  </body>
+</html>
