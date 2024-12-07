@@ -33,7 +33,7 @@ O site está organizado nas seguintes seções:
 
 ## 🔗 Links
 
-- [Site ao vivo](https://seu-dominio.surge.sh)
+- [Site ao vivo](https://lucassrosa.surge.sh/)
 - [LinkedIn](https://www.linkedin.com/in/lsrdev/)
 - [GitHub](https://github.com/lucopdev)
 
