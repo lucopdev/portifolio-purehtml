@@ -25,13 +25,13 @@ function renderProjects(projects, filter = 'all') {
     console.error('Container de projetos não encontrado!');
     return;
   }
-  container.innerHTML = '';
 
-  projects.forEach((project) => {
-    if (filter === 'all' || project.module === filter) {
-      container.innerHTML += createProjectCard(project);
-    }
-  });
+  const filteredProjects = projects
+    .filter(project => filter === 'all' || project.module === filter)
+    .map(createProjectCard)
+    .join('');
+
+  container.innerHTML = filteredProjects;
 }
 
 // Adiciona eventos de clique aos botões de filtro
